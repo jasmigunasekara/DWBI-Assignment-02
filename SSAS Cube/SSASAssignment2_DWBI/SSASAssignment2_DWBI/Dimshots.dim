@@ -1,0 +1,319 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="73c38004-4583-41ba-be91-d940656c2942" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dimshots</ID>
+  <Name>Dimshots</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1970" scrolltop="-5585" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8001" y="15219" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dimshots" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3577" height="5572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f90d0000c4150000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dimshots" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1970</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5585</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="43bd26bf-990f-4d1f-8a52-ccf632c43133">
+    <DataSourceViewID>DSV_Football Leagues DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="ae70d96f-5022-4f79-8426-b8d6317ddf93">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="81930c51-89c4-4402-b66c-b33c0db6d35e">
+      <ID>Shooter SK</ID>
+      <Name>Shooter SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cff6c052-b6a9-484d-9cc9-d8c643c38443">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="77f32f6a-08eb-4d3e-a479-f84f461bbb4d">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>shooterSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ab984200-1d5d-4681-ab74-f93a8354e5a0">
+          <AttributeID>Game Key</AttributeID>
+          <Name>Game Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2e7711f9-000e-4987-ba15-f122ad9cd01c">
+          <AttributeID>Alternateshooter ID</AttributeID>
+          <Name>Alternateshooter ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b0e0469b-33ed-4319-8fae-994a90bbea44">
+          <AttributeID>Assister ID</AttributeID>
+          <Name>Assister ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="734922e5-708b-4c03-8b08-992fa1242660">
+          <AttributeID>Minute</AttributeID>
+          <Name>Minute</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="740c6d6c-4f09-4bcd-9914-a657aa78904a">
+          <AttributeID>Situation</AttributeID>
+          <Name>Situation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8a138c73-5d69-45ec-879a-e0f6209f0bf7">
+          <AttributeID>Last Action</AttributeID>
+          <Name>Last Action</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="70c89d82-d722-4eed-b4a9-3224e4f8b3db">
+          <AttributeID>Shot Type</AttributeID>
+          <Name>Shot Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="452102cb-0bd3-4cf4-b63f-d0d430bd8753">
+          <AttributeID>Shot Result</AttributeID>
+          <Name>Shot Result</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ef157e7-4f56-4e1f-8600-f7de2a5db9e0">
+          <AttributeID>x Goal</AttributeID>
+          <Name>x Goal</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="533b1834-0d8a-45d9-8456-42e46d070ad5">
+          <AttributeID>Position X</AttributeID>
+          <Name>Position X</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="db11a2e2-43c7-4d42-a155-05b1949d7f48">
+          <AttributeID>Position Y</AttributeID>
+          <Name>Position Y</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e1b53a44-bdf0-4120-ba8d-24bd07579559">
+      <ID>Game Key</ID>
+      <Name>Game Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4e91e53c-7933-40e0-a10c-41c4933a268a">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1fd501a8-aef9-4538-abd5-8124a65097de">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>gameKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c70c4058-f0e7-4df1-be4d-ca052900dc9b">
+      <ID>Alternateshooter ID</ID>
+      <Name>Alternateshooter ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8d5db3ea-ce77-4cc4-bf51-efa3ab932cbf">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d072e1cc-e20c-4019-9b39-96e8b041467e">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>AlternateshooterID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b992412b-1335-44ec-8a9a-f672a92372cd">
+      <ID>Assister ID</ID>
+      <Name>Assister ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de3f7d1d-6747-4a6d-98dd-090956832c7f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4bfadf85-5555-4afd-bd9a-ddd59c03d438">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>assisterID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e168c07b-0ee0-46c4-be52-9ce269ef3701">
+      <ID>Minute</ID>
+      <Name>Minute</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="21808c4a-0502-4fd7-9e00-74ffe021c234">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe1b2af8-7fa4-4904-843e-0b9194ec730b">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>minute</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="509d3b0c-d853-424d-b36b-7f67972c95cf">
+      <ID>Situation</ID>
+      <Name>Situation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba3d5a7f-4ddf-4601-9381-94904dbd1b8f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1774fb02-e738-4541-9beb-d2368b6f3b2b">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>situation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="72a3e92f-254a-4b2e-bc6b-d353e215a50c">
+      <ID>Last Action</ID>
+      <Name>Last Action</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2d71dce2-92e4-4658-bb1b-f566db14ee5e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe20d90b-7311-4524-91fd-cb0b302f4770">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>lastAction</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d761a77a-29b6-448c-abc3-683872caf63f">
+      <ID>Shot Type</ID>
+      <Name>Shot Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="991507e9-f004-483e-9674-cbc4e1012873">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9d355f3-6314-4ee1-9364-4732a26be1a8">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>shotType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="53a11cc0-e9f3-47e2-afe1-4edcfd70dc8c">
+      <ID>Shot Result</ID>
+      <Name>Shot Result</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="276dea8d-6e87-44b0-8a6a-240823ea6a45">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0d1781f-1f86-44d9-9ade-b7a612593592">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>shotResult</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="744d2317-b889-4f13-abc9-61cc7cc4661a">
+      <ID>x Goal</ID>
+      <Name>x Goal</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bb57c967-c895-4b30-b045-93c39911ef16">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4002455e-b6e0-443d-b770-f67fb862653b">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>xGoal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="03936828-8a13-4856-9af0-00f83afabcaf">
+      <ID>Position X</ID>
+      <Name>Position X</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="656f41c9-8139-4be4-b8f1-d48611f354b5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d4834a27-2be9-48e5-bbd7-12c9ddbf6ba4">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>positionX</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="93a85fda-d73d-4a31-9f0d-caa21fa03f4b">
+      <ID>Position Y</ID>
+      <Name>Position Y</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="87b4d557-b5d5-4a3a-8c5c-5e7cb9aed2e5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c175bcb-1829-4d71-97df-09fc12bfff7b">
+            <TableID>dbo_Dimshots</TableID>
+            <ColumnID>positionY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

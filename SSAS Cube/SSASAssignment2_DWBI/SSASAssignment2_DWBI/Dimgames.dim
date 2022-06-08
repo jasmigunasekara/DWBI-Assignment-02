@@ -1,0 +1,353 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2c263815-8db0-4fcf-8961-28a2e39434e1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dimgames</ID>
+  <Name>Dimgames</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1864" scrolltop="-5585" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8001" y="15219" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dimgames" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3789" height="6270" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000cd0e00007e180000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dimgames" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1864</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5585</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="89c0b201-b04f-4494-83c5-76043891dcf2">
+    <DataSourceViewID>DSV_Football Leagues DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="c44c17da-313c-4e99-bf9b-26d3b3971e44">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="43e4231b-14fb-4c38-9bdd-5f3b8f231f83">
+      <ID>Game SK</ID>
+      <Name>Game SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="90c90763-7964-4c61-94e2-9c5bb0303d96">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0dd57dce-d831-41ab-b4aa-25200b6263e5">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>gameSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="65524a5d-a3a2-4253-ba9b-e7232736bcfc">
+          <AttributeID>League Key</AttributeID>
+          <Name>League Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ee1229a5-9fbc-457f-9ad3-86e89e2be7be">
+          <AttributeID>Alternategame ID</AttributeID>
+          <Name>Alternategame ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2f6ee391-41de-44eb-ab85-e7e41ebb376e">
+          <AttributeID>Season</AttributeID>
+          <Name>Season</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e8e16596-f8a7-4db0-b7f3-5b2371a299f1">
+          <AttributeID>Date</AttributeID>
+          <Name>Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e517db93-b797-4462-b6c9-3ef13ad30c23">
+          <AttributeID>Home Team ID</AttributeID>
+          <Name>Home Team ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="87c7518d-635d-4d54-b79b-4570aead2fd9">
+          <AttributeID>Away Team ID</AttributeID>
+          <Name>Away Team ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="36fad694-524a-4cb8-95eb-c03c836bd524">
+          <AttributeID>Home Goals</AttributeID>
+          <Name>Home Goals</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0c33b38f-12b5-4175-aa64-eaf52c778ca9">
+          <AttributeID>Away Goals</AttributeID>
+          <Name>Away Goals</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cd29f631-ba88-457e-96e5-d3637dee77b0">
+          <AttributeID>Home Probability</AttributeID>
+          <Name>Home Probability</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b0ee79bf-b08c-46e6-86d6-cfd56ea9b411">
+          <AttributeID>Draw Probability</AttributeID>
+          <Name>Draw Probability</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="59ce8a72-eed7-4b2a-aa9c-2f32f5be91b3">
+          <AttributeID>Away Probability</AttributeID>
+          <Name>Away Probability</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d10c8083-d4ed-4165-8702-ce1c169ccdd0">
+          <AttributeID>Home Goals Half Time</AttributeID>
+          <Name>Home Goals Half Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="92ff11f3-4434-4aa6-8cd1-54fdd82a64c3">
+          <AttributeID>Away Goals Half Time</AttributeID>
+          <Name>Away Goals Half Time</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="915436f5-9483-4977-8f74-2449b557788e">
+      <ID>League Key</ID>
+      <Name>League Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="861490fd-6e11-4f02-b08d-072636395998">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04cff539-0a9b-4bca-94dc-ec0e7931e913">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>leagueKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d6fb2e95-fdb0-45dc-aa1e-af675b7bdb62">
+      <ID>Alternategame ID</ID>
+      <Name>Alternategame ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="734daab5-b41a-4eb1-8af2-8bac2c2cbc14">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc0d4b10-403c-4718-a4de-15b672369815">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>AlternategameID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="abebb499-b8ca-4155-bf32-feff3654e3e6">
+      <ID>Season</ID>
+      <Name>Season</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b649edf0-11f8-4a19-9448-bad5f8d83d17">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c06fc3ea-1096-4c19-a0c4-27949304ca01">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>season</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cdc7eac2-aa79-461e-a4b5-b2523770216c">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67b1dcdd-a0f2-4297-968c-dcd47162de0d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d13e1b04-1343-48aa-90ad-c9efd6e9bd74">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d56f7d17-51bf-4caf-87ba-be341c40ab0f">
+      <ID>Home Team ID</ID>
+      <Name>Home Team ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9e6d93fa-5604-46c0-b5fd-a14130f553ad">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f200f201-9270-4d01-9866-c25a391d9da8">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>homeTeamID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c58ac4a9-a7fe-4e91-a925-96e15868b0f7">
+      <ID>Away Team ID</ID>
+      <Name>Away Team ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="19726040-6c07-4fe2-91db-c1ee4e6e6dac">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b05f8b7-2e9d-4a7d-87ba-f4f24772a2bb">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>awayTeamID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="20fea3e2-dbd6-4318-9589-39c7059a86cb">
+      <ID>Home Goals</ID>
+      <Name>Home Goals</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="38fddba3-7a0d-4845-b636-3676e2ff47ec">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="31bba41c-338b-4ccd-9e5e-7463b7917325">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>homeGoals</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="54a1bd75-a8b9-4bc2-b147-0906e7deeb35">
+      <ID>Away Goals</ID>
+      <Name>Away Goals</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f54579e7-4864-42f5-8f57-b2aa943c4673">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac9ee3d8-1403-4a5b-9932-abcd0c0284bb">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>awayGoals</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0dcd1694-87bc-4cd8-9f09-48ad74be7050">
+      <ID>Home Probability</ID>
+      <Name>Home Probability</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b5e24a52-d39c-42b2-9469-9e8425a37898">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5fa222e8-6b61-4ad2-9571-7927156ae4a9">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>homeProbability</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0dee4517-3c13-4021-891b-1dcaae40c6a4">
+      <ID>Draw Probability</ID>
+      <Name>Draw Probability</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="42b3c72f-42ef-4345-b188-d3ad0e55ada2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="091e6d53-cf9e-4b1d-b493-bf591d3cfb32">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>drawProbability</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b72175b6-2d66-47e4-9100-351a7d0370c0">
+      <ID>Away Probability</ID>
+      <Name>Away Probability</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a007a445-c918-4636-8da7-d628f724993e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fd23b92c-ae5e-4616-a1d1-3f486ccb1539">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>awayProbability</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f6f3cf7f-b0cc-4540-a15b-70a3862a71eb">
+      <ID>Home Goals Half Time</ID>
+      <Name>Home Goals Half Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1caf31f6-1326-42b6-b518-0b97a546fbc4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="52ed7ed9-c274-461e-8652-bca23a29c546">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>homeGoalsHalfTime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0a37180-48a7-46c8-a439-98625f54f3b1">
+      <ID>Away Goals Half Time</ID>
+      <Name>Away Goals Half Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c819b6e8-b404-42e7-8fcd-cbb83a2ecb58">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3f5a99f-c924-47f8-b7f6-533e99194db0">
+            <TableID>dbo_Dimgames</TableID>
+            <ColumnID>awayGoalsHalfTime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
